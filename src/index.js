@@ -7,6 +7,9 @@ import {
   HashRouter
 } from 'react-router-dom'
 import './index.css'
+import githublogo from './Octocat.png'
+import linkedInLogo from './linkedin.png'
+import instalogo from './insta.png'
 
 const headerDestination = document.querySelector('#myHeader')
 const destination = document.querySelector('#root')
@@ -143,9 +146,9 @@ class Contact extends Component {
         <h2>Want to know more?</h2>
         <p>
           <ul>
-            <li>Check out my <a href='https://github.com/rahisulhaque'> Github</a>.</li>
-            <li>or LinkedIn <a href='https://www.linkedin.com/in/rahisul'>LinkedIn</a>.</li>
-            <li>or Instagram: <a href='https://www.instagram.com/rahisul_hawk'>Instagram</a>.</li>
+            <li>Check out my <a href='https://github.com/rahisulhaque'> <img style={{height: 30, width: 34}} src={githublogo} alt='Octocat' /></a>.</li>
+            <li>or LinkedIn <a href='https://www.linkedin.com/in/rahisul'><img style={{height: 30, width: 120}} src={linkedInLogo} /> </a>.</li>
+            <li>or Instagram: <a href='https://www.instagram.com/rahisul_hawk'><img style={{height: 30, width: 30}} src={instalogo} /></a>.</li>
           </ul>
         </p>
       </div>
