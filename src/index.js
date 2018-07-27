@@ -8,14 +8,64 @@ import {
 } from 'react-router-dom'
 import './index.css'
 
+const headerDestination = document.querySelector('#myHeader')
 const destination = document.querySelector('#root')
+
+class MyName extends Component {
+  render () {
+    return (<div id='container' >
+      <Letter bgColor='#FF605F' letter='R' />
+      <Letter bgColor='#50f442' letter='A' />
+      <Letter bgColor='#49DD8E' letter='H' />
+      <Letter bgColor='#AE99FF' letter='I' />
+      <Letter bgColor='#49DD8E' letter='S' />
+      <Letter bgColor='#58B3FF' letter='U' />
+      <Letter bgColor='#FF605F' letter='L' />
+      <Letter bgColor='#FFCC00' letter=' ' />
+      <Letter bgColor='#FFCC00' letter=' ' />
+      <Letter bgColor='#49DD8E' letter='H' />
+      <Letter bgColor='#AE99FF' letter='A' />
+      <Letter bgColor='#49DD8E' letter='Q' />
+      <Letter bgColor='#58B3FF' letter='U' />
+      <Letter bgColor='#58B3FF' letter='E' />
+    </div>)
+  }
+}
+
+class Letter extends Component {
+  render () {
+    const LetterStyle = {
+      fontSize: 48,
+      fontFamily: 'LucidaGrande',
+      padding: 5,
+      margin: 10,
+      backgroundColor: this.props.bgColor,
+      color: '#333',
+      display: 'inline-block',
+      height: 50,
+      widows: 30
+
+    }
+    return (<div style={LetterStyle}> {this.props.letter} </div>)
+  }
+}
+
+class Fonts extends Component {
+  render () {
+    const FontStyle = {
+      textAlign: 'center'
+    }
+    return (<div style={FontStyle}> {this.props.letter} </div>)
+  }
+}
 
 class Main extends Component {
   render () {
     return (
       <HashRouter>
         <div>
-          <h1>Rahisul Haque</h1>
+
+          <div id='container'> <MyName /> </div>
           <ul className='header'>
             <li><NavLink to='/'>Home</NavLink></li>
             <li><NavLink to='/work'>Work</NavLink></li>

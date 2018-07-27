@@ -6,9 +6,7 @@ body {
 h1, h2, p, ul, li {
   font-family: avenir,sans-serif;
 }
-h1{
-  font-size: 48;
-}
+
 ul.header li {
   display: inline;
   list-style-type: none;
