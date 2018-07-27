@@ -93,7 +93,7 @@ class Home extends Component {
       <div>
         <h2>Hello!</h2>
         <p>I'm Rahisul. I'm a very passionate software developer. Currently I'm going to Arizona State University. I've a long retail and customer serveice experinece.
-        Now, I'm looking for a internship oppurtunity so I can get into industry.</p>
+        Now, I'm looking for a internship oppurtunity so I can get into  software industry.</p>
 
         <p>If you take time to know me, recommend me or give me any suggestion I will really appriciate it.</p>
       </div>
@@ -147,8 +147,8 @@ class Contact extends Component {
         <p>
           <ul>
             <li>Check out my <a href='https://github.com/rahisulhaque'> <img style={{height: 30, width: 34}} src={githublogo} alt='Octocat' /></a>.</li>
-            <li>or LinkedIn <a href='https://www.linkedin.com/in/rahisul'><img style={{height: 30, width: 120}} src={linkedInLogo} /> </a>.</li>
-            <li>or Instagram: <a href='https://www.instagram.com/rahisul_hawk'><img style={{height: 30, width: 30}} src={instalogo} /></a>.</li>
+            <li>or   <a href='https://www.linkedin.com/in/rahisul'> <img style={{height: 30, width: 120}} src={linkedInLogo} /> </a>.</li>
+            <li>or mobile photography on: <a href='https://www.instagram.com/rahisul_hawk'> <img style={{height: 30, width: 30}} src={instalogo} /></a>.</li>
           </ul>
         </p>
       </div>
