@@ -18,16 +18,15 @@ class MyName extends Component {
       <Letter bgColor='#50f442' letter='A' />
       <Letter bgColor='#49DD8E' letter='H' />
       <Letter bgColor='#AE99FF' letter='I' />
-      <Letter bgColor='#49DD8E' letter='S' />
-      <Letter bgColor='#58B3FF' letter='U' />
+      <Letter bgColor='#f77c02' letter='S' />
+      <Letter bgColor='#95f701' letter='U' />
       <Letter bgColor='#FF605F' letter='L' />
-      <Letter bgColor='#FFCC00' letter=' ' />
       <Letter bgColor='#FFCC00' letter=' ' />
       <Letter bgColor='#49DD8E' letter='H' />
       <Letter bgColor='#AE99FF' letter='A' />
       <Letter bgColor='#49DD8E' letter='Q' />
-      <Letter bgColor='#58B3FF' letter='U' />
-      <Letter bgColor='#58B3FF' letter='E' />
+      <Letter bgColor='#41f4d9' letter='U' />
+      <Letter bgColor='#ce42f4' letter='E' />
     </div>)
   }
 }
@@ -35,15 +34,15 @@ class MyName extends Component {
 class Letter extends Component {
   render () {
     const LetterStyle = {
-      fontSize: 48,
+      fontSize: 36,
       fontFamily: 'LucidaGrande',
       padding: 5,
       margin: 10,
       backgroundColor: this.props.bgColor,
       color: '#333',
       display: 'inline-block',
-      height: 50,
-      widows: 30
+      height: 40,
+      widows: 25
 
     }
     return (<div style={LetterStyle}> {this.props.letter} </div>)
