@@ -13,10 +13,19 @@ import instalogo from './insta.png'
 
 const headerDestination = document.querySelector('#myHeader')
 const destination = document.querySelector('#root')
-
-class MyName extends Component {
+class MyHeader extends Component {
   render () {
-    return (<div id='container' >
+    const MyHeaderStyle = {
+      display: 'inline-block'}
+    return (<div style={MyHeaderStyle} >
+      <FirstName /> <LastName />
+    </div>)
+  }
+}
+
+class FirstName extends Component {
+  render () {
+    return (<div>
       <Letter bgColor='#FF605F' letter='R' />
       <Letter bgColor='#50f442' letter='A' />
       <Letter bgColor='#49DD8E' letter='H' />
@@ -25,12 +34,21 @@ class MyName extends Component {
       <Letter bgColor='#95f701' letter='U' />
       <Letter bgColor='#FF605F' letter='L' />
       <Letter bgColor='#FFCC00' letter=' ' />
-      <Letter bgColor='#49DD8E' letter='H' />
-      <Letter bgColor='#AE99FF' letter='A' />
-      <Letter bgColor='#49DD8E' letter='Q' />
-      <Letter bgColor='#41f4d9' letter='U' />
-      <Letter bgColor='#ce42f4' letter='E' />
-    </div>)
+    </div>
+    )
+  }
+}
+class LastName extends Component {
+  render () {
+    return (
+      <div>
+        <Letter bgColor='#49DD8E' letter='H' />
+        <Letter bgColor='#AE99FF' letter='A' />
+        <Letter bgColor='#49DD8E' letter='Q' />
+        <Letter bgColor='#41f4d9' letter='U' />
+        <Letter bgColor='#ce42f4' letter='E' />
+      </div>
+    )
   }
 }
 
@@ -67,7 +85,7 @@ class Main extends Component {
       <HashRouter>
         <div>
 
-          <div id='container'> <MyName /> </div>
+          <div id='container'> <MyHeader /> </div>
           <ul className='header'>
             <li><NavLink to='/'>Home</NavLink></li>
             <li><NavLink to='/work'>Work</NavLink></li>
