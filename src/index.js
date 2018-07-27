@@ -10,6 +10,7 @@ import './index.css'
 import githublogo from './Octocat.png'
 import linkedInLogo from './linkedin.png'
 import instalogo from './insta.png'
+import ReasonCounter from './reasoncounter'
 
 const headerDestination = document.querySelector('#myHeader')
 const destination = document.querySelector('#root')
@@ -23,7 +24,7 @@ class MyHeader extends Component {
   }
 }
 
-class FirstName extends Component {
+class MyName extends Component {
   render () {
     return (<div>
       <Letter bgColor='#FF605F' letter='R' />
@@ -34,20 +35,12 @@ class FirstName extends Component {
       <Letter bgColor='#95f701' letter='U' />
       <Letter bgColor='#FF605F' letter='L' />
       <Letter bgColor='#FFCC00' letter=' ' />
+      <Letter bgColor='#49DD8E' letter='H' />
+      <Letter bgColor='#AE99FF' letter='A' />
+      <Letter bgColor='#49DD8E' letter='Q' />
+      <Letter bgColor='#41f4d9' letter='U' />
+      <Letter bgColor='#ce42f4' letter='E' />
     </div>
-    )
-  }
-}
-class LastName extends Component {
-  render () {
-    return (
-      <div>
-        <Letter bgColor='#49DD8E' letter='H' />
-        <Letter bgColor='#AE99FF' letter='A' />
-        <Letter bgColor='#49DD8E' letter='Q' />
-        <Letter bgColor='#41f4d9' letter='U' />
-        <Letter bgColor='#ce42f4' letter='E' />
-      </div>
     )
   }
 }
@@ -85,7 +78,7 @@ class Main extends Component {
       <HashRouter>
         <div>
 
-          <div id='container'> <MyHeader /> </div>
+          <div id='container'> <MyName /> </div>
           <ul className='header'>
             <li><NavLink to='/'>Home</NavLink></li>
             <li><NavLink to='/work'>Work</NavLink></li>
@@ -142,9 +135,9 @@ class Reason extends Component {
   render () {
     return (
       <div>
+        <ReasonCounter />
+        <p>To make your life easier, I'm telling you, </p>
         <h2>Top 10 reasons you should consider me:</h2>
-        <p>Mauris sem velit, vehicula eget sodales vitae,
-        rhoncus eget sapien:</p>
         <ol>
           <li>I know C programming language, pointers. Now, Im focusing on Go-lang.</li>
           <li>I have also worked with OOP language C++ and Java.</li>
@@ -152,6 +145,10 @@ class Reason extends Component {
           <li>Currently I''m mastering Python and Javascript.</li>
           <li>In mobile app development, I'm choosing flutter. </li>
           <li>I'm also doing project in ReactJS.</li>
+          <li>I'm very good at Linux machine and shell environment.</li>
+          <li>I am using Vim as my text editor for last 2 years!</li>
+          <li>I did a industry starndard coding bootcamp in Bay area and participated in various workshops and hackathons. </li>
+          <li>I know AWS pretty well, in fact this website is running on AWS S3 bucket, Route53 and AWS cloudFront.</li>
         </ol>
       </div>
     )
@@ -162,12 +159,8 @@ class Contact extends Component {
     return (
       <div>
         <h2>Want to know more?</h2>
-        <p>
-          <ul>
-            <li>Check out my <a href='https://github.com/rahisulhaque'> <img style={{height: 30, width: 34}} src={githublogo} alt='Octocat' /></a>.</li>
-            <li>or   <a href='https://www.linkedin.com/in/rahisul'> <img style={{height: 30, width: 120}} src={linkedInLogo} /> </a>.</li>
-            <li>or mobile photography on: <a href='https://www.instagram.com/rahisul_hawk'> <img style={{height: 30, width: 30}} src={instalogo} /></a>.</li>
-          </ul>
+        <p> Check out my <a href='https://github.com/rahisulhaque'> <img style={{height: 30, width: 34}} src={githublogo} alt='Octocat' /></a> or <a href='https://www.linkedin.com/in/rahisul'> <img style={{height: 30, width: 120}} src={linkedInLogo} /> </a>
+          or mobile photography on: <a href='https://www.instagram.com/rahisul_hawk'> <img style={{height: 30, width: 30}} src={instalogo} /></a>.
         </p>
       </div>
     )

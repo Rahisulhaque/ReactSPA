@@ -3,7 +3,17 @@ body {
   padding: 20px;
   margin: 0;
 }
-h1, h2, p, ul, li {
+reason{
+  font-family: avenir,sans-serif;
+  font-size: 24px;  
+
+
+}
+h2{
+  font-family: avenir,sans-serif;
+  display:flex; flex-direction:row;
+}
+ p, ul, li {
   font-family: avenir,sans-serif;
 }
 
